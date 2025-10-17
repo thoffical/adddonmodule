@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-
-    <addon id="script.revolve.service" name="Revolve Skin Script" version="2.0.1" provider-name="Malthus">
+   <addon id="script.revolve.service" name="Revolve Skin Script" version="2.0.1" provider-name="Malthus">
         <requires>
             <import addon="xbmc.python" version="3.0.0"/>
             <import addon="xbmc.addon" version="17.0.0"/>
@@ -16,9 +15,7 @@
             <license>GNU General Public License, Version 2</license>
             <source>https://github.com/Malthus/script.revolve.service</source>
         </extension>
-    </addon>
-
-    <addon id="script.favourites" name="Favourites Script" version="8.1.3" provider-name="ronie, `Black">
+    </addon><addon id="script.favourites" name="Favourites Script" version="8.1.3" provider-name="ronie, `Black">
         <requires>
             <import addon="xbmc.python" version="3.0.0"/>
         </requires>
@@ -37,6 +34,22 @@
             <news>- get favourites using json-rpc instead of parsing the favourites.xml file
 - fix crash when no favourites exist</news>
         </extension>
-    </addon>
-
+    </addon><addon id="repository.addon.module" name="AddonModule" version="1.0.0" provider-name="Thirdy">
+    <extension point="xbmc.addon.repository" name="AddonModule">
+        <dir>
+            <info compressed="false">https://github.com/thoffical/addonmodule.omegapiers/master/repo/zips/addons.xml</info>
+            <checksum>https://github.com/thoffical/addonmodule.omegapiers/master/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/thoffical/addonmodule.omegapiers/raw/master/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>the repository of addonmodule</summary>
+        <description>Find light skins or services/scripts here</description>
+        <disclaimer>All rights to the owners</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
 </addons>
